@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+  line-height: 1.5;
+}
+
+body {
+  background: linear-gradient(rgba(0, 102, 85, 0.8), rgba(0, 102, 85, 0.8)),
+    url(./img/about.jpg);
+  height: 110vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  margin: 5em 0 5em;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.description {
+  font-size: 22px;
+  font-style: italic;
+  color: rgb(188, 255, 244);
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.4);
+  max-width: 900px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 25px 55px 55px;
+  border-radius: 7px;
+}
+
+.form-group {
+  margin: 30px 0;
+}
+
+.form-group p {
+  color: white;
+  font-size: 23px;
+}
+
+.form-group label {
+  font-size: 23px;
+  color: white;
+}
+
+label,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid rgb(224, 224, 224);
+  padding: 7px 14px;
+  font-size: 20px;
+  color: rgb(99, 99, 99);
+  transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+  border: 2px solid rgb(0, 140, 255);
+  box-shadow: 0px 0px 6px rgb(0, 140, 255);
+}
+
+select {
+  padding: 11px 14px;
+}
+
+.checkboxes {
+  font-size: 23px;
+  color: white;
+}
+
+.check-container,
+.radio-container {
+  display: flex;
+  align-items: center;
+}
+
+.check-container > input,
+.radio-container > input {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  outline: none;
+  box-shadow: none;
+}
+
+.checkbox-label,
+.radio-label {
+  font-size: 23px;
+  color: white;
+  margin-left: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+
+form input[type="submit"] {
+  width: 100%;
+  font-size: 20px;
+  padding: 16px 0;
+  background: rgb(179, 51, 72);
+  border: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 630px) {
+  p,
+  label,
+  input,
+  textarea {
+    font-size: 18px !important;
+  }
+
+  .container {
+    padding: 20px 20px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  select,
+  textarea {
+    padding: 5px 12px;
+  }
+
+  .heading {
+    margin: 2.5em 0 2.5em;
+  }
+
+  .title {
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+  .description {
+    font-size: 17px;
+    font-style: italic;
+    color: rgb(188, 255, 244);
+  }
+}
